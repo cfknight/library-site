@@ -1,0 +1,118 @@
+﻿/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  font-family:sans-serif;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  /* Set the fixed height of the footer here */
+}
+
+.blueback {
+background-color:#428bca;
+color:#e6e6e6;
+}
+
+.navytext {
+color:navy;
+}
+
+.whiteback {
+background:white;
+}
+
+.logo {
+padding-top:0;
+margin-top:0;
+padding-bottom:0;
+margin-bottom:0;
+}
+
+.repeaterImage
+{
+    height: 200px;
+    margin-left: 5%;
+}
+
+    .footer ul {
+    list-style-type:none;
+    }
+
+.jumbotron {
+background: url('../images/books.jpg') 100% 100% fixed;
+color:white;
+}
+
+
+#contactpage {page:center auto;
+}
+
+.random {
+width:100%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.modal-header {
+    background-color:#428bca;
+    color:white;
+}
+
+.modal{
+    width:100%;
+    margin-left:15px;
+    padding-left:15px;
+}
+
+.fontred {color:#680000;
+}
+
+.seemore
+{
+    margin-bottom: 30px;
+    margin-left: 8%;
+}
+
+.repeater {
+height:300px;
+background:#ddd;
+}
+
+.grayback {
+background:#ddd;
+}
+
+.mynav {
+margin-top:10px;
+}
+
+mybtn. {
+background:#CCCCCC;
+}
+
+.nopad {
+padding-bottom:0;
+margin-bottom:0;
+}
+
+.vr {
+border-left:1px solid #e6e6e6;
+border-right:1px solid #e6e6e6;
+}
+
+.grad
+{
+background: -webkit-linear-gradient(left, white , gray); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, white, gray); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, white, gray); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, white, gray); /* Standard syntax */
+} 

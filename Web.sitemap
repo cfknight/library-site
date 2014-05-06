@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="."  description="">
+      
+        <siteMapNode url="~/Default.aspx" title="Home"  description="" />
+      
+        <siteMapNode url="~/SearchMaterials.aspx" title="Search"  description="" />
+
+        <siteMapNode url="~/About.aspx" title="About Us"  description="" />
+
+        <siteMapNode url="~/Login.aspx" title="Login"  description="" />
+
+        <siteMapNode url="~/Contact.aspx" title="Contact Us"  description="" />
+
+
+      <siteMapNode url="~/librarian/default.aspx" title="Librarian"  description="">
+        <siteMapNode url="~/librarian/AddMaterial.aspx" title="Add A New Material" description="" />
+        <siteMapNode url="~/librarian/Materials.aspx" title="View All Materials" description="" />
+        <siteMapNode url="~/librarian/Check-Out.aspx" title="Check Out an Item" description="" />
+        <siteMapNode url="~/librarian/Check-In.aspx" title="Return an Item" description="" />
+        <siteMapNode url="~/librarian/ViewCheckedOut.aspx" title="Rented Materials" description="" />
+        <siteMapNode url="~/librarian/OverDueReport.aspx" title="Overdue Report" description="" />
+        <siteMapNode url="~/librarian/patrongridview.aspx" title="View All Patrons" description="" />
+        <siteMapNode url="~/librarian/addnewpatron.aspx" title="Add A New Patron" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/patron/default.aspx" title="Patron"  description=""/>
+      
+
+      </siteMapNode>
+</siteMap>

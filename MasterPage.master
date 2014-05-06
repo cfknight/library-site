@@ -1,0 +1,151 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid whiteback">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="default.aspx"><asp:Image ID="Image2" runat="server" cssclass="logo" ImageUrl="~/images/slpl.png" Width="120px" /></a>
+       <!-- <a class="navbar-brand brand" href="default.aspx"> <asp:Image ID="Image1" runat="server" cssclass="logo" ImageUrl="~/images/library-logo.gif" Width="90px" />South Liberty Public Library</a> -->
+           </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav mynav navbar-right">
+        <li><a runat="server" href="~/Default.aspx">Home</a></li>
+        <li><a id="A3" runat="server" href="About.aspx">About</a></li>    
+        <li><a id="A1" runat="server" href="Contact.aspx">Contact</a></li>
+        <li>
+            <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/default.aspx" />
+        </li>
+        <li><a id="A7" runat="server" href="SearchMaterials.aspx">Search</a></li>
+      </ul>
+
+
+                
+      
+
+
+
+      <ul class="nav navbar-nav navbar-left mynav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Librarian<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li role="presentation" class="dropdown-header">Rentals</li>
+            <li><a runat="server" href="~/librarian/Check-Out.aspx">Check-Out</a></li>
+            <li><a runat="server" href="~/librarian/Check-In.aspx">Check-In</a></li>
+            <li><a runat="server" href="~/librarian/ViewCheckedOut.aspx">Rented Materials</a></li>
+            <li><a runat="server" href="~/librarian/OverDueReport.aspx">Overdue Report</a></li>
+            <li class="divider"></li>
+            <li role="presentation" class="dropdown-header">Users</li>
+            <li><a runat="server" href="~/librarian/patrongridview.aspx">Patrons</a></li>
+            <li><a runat="server" href="~/librarian/addnewpatron.aspx">Add Patrons</a></li>
+            <li class="divider"></li>
+            <li role="presentation" class="dropdown-header">Items</li>
+            <li><a runat="server" href="~/librarian/Materials.aspx">Materials</a></li>
+            <li><a runat="server" href="~/librarian/AddMaterial.aspx">Add Material</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-left mynav">
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Patron<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a id="A2"  runat="server" href="~/Patron/default.aspx">My Profile</a></li>
+          </ul>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer blueback">
+        <br />
+      <div class="container">
+          <div class="row logo">
+              <div class="col-md-4">
+                  <ul>
+                      <li><h4 class="navytext">Contact Us</h4></li>
+                      <li>Phone: (319) 555-5555</li>
+                      <li>Email: Contact@SLPL.com</li>
+                 </ul>                  
+                  <hr />
+                  <ul>
+                      <li><h4 class="navytext">Hours</h4></li>
+                      <li>M-F: 8am - 9pm</li>
+                      <li>Saturday: 10am - 5pm</li>
+                      <li>Sunday: Closed </li>
+                  </ul>
+                  <br /><br /><br /><br /><br />
+                  
+                 <strong class="navytext">Date </strong> <asp:Label ID="timeLabel" runat="server" Font-Size="Medium"></asp:Label>
+                  <br />
+                 <strong class="navytext">Total Materials Online: </strong> <asp:Label ID="countLabel" runat="server" Font-Size="Medium"></asp:Label>
+                                   
+              </div>
+              <div class="col-md-4 vr">
+                  <ul class="nopad">
+                      <li><h4 class="navytext">Come Visit</h4></li>
+                      <li><address>South Liberty Public Library<br />
+                                   333 Book Street<br />
+                                   South Liberty, IA  52243
+                          </address></li>
+                      <li><br /></li>
+                      <li><iframe width="200" height="200" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBBsWRh3jSrD_bOzUlkam4qE1u63uyG30M&q=520+Cherry+Street,North+Liberty+IA"></iframe></li>
+                  </ul>
+               
+              </div>
+              <div class="col-md-4">
+                  <ul class="nopad">
+                      <li><h4 class="navytext">Follow Us on Social Media</h4></li>
+                      <li><br /></li>
+                      <li><a class="twitter-timeline"  href="https://twitter.com/6K183_SLPL"  data-widget-id="461770722138808320">Tweets by @6K183_SLPL</a>
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+
+</li>
+                  </ul>
+                  
+
+              </div>
+          </div>
+          <hr />
+        <p class="text-center">&copy; 2014 South Liberty Public Library<br />
+            Jintan Bai, Kaileigh Ceurvorst, Yahong Ding, Adam Frink, & Charles Knight
+        </p>
+      </div>
+    </div>
+    </form>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
